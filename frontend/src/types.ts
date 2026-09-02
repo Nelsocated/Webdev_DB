@@ -6,3 +6,5 @@ export interface Pie {
   is_baked?: boolean;
   slice_count?: number;
 }
+
+export type BodyPie = Partial<Pie>;

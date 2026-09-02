@@ -7,3 +7,9 @@ export const fetchPies = async (): Promise<Pie[]> => {
   if (!response.ok) throw new Error("Failed to fetch pies.");
   return response.json();
 };
+
+export const postPies = async (): Promise<Pie> => {
+  const response = await fetch(`${API_BASE}/pies`);
+  if (!response.ok) throw new Error("Failed to post pies.");
+  return response.json();
+};

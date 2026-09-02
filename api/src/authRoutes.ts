@@ -9,7 +9,7 @@ const router = Router();
 const JWT_SECRET = process.env.JWT_SECRET || "Fallback_secret";
 
 router.post(
-  "/",
+  "/register",
   validateResource(authRequestSchema),
   async (req: Request, res: Response) => {
     const { username, password } = req.body;
