@@ -13,3 +13,18 @@ VALUES
   ('proj_004', 'Security Audit',      'Annual third-party security review and remediation.', 'org_acme_001', NOW(), NOW()),
   ('proj_005', 'Internal Tools',      NULL,                                                  'org_acme_001', NOW(), NOW())
 ON CONFLICT ("id") DO NOTHING;
+
+-- Tasks (unassigned: "assignedUserId" is left NULL)
+INSERT INTO "Task" ("id", "title", "status", "projectId", "createdAt", "updatedAt")
+VALUES
+  ('task_001', 'Audit current site content',      'COMPLETED',   'proj_001', NOW(), NOW()),
+  ('task_002', 'Design new homepage mockups',     'IN_PROGRESS', 'proj_001', NOW(), NOW()),
+  ('task_003', 'Implement responsive nav',        'PENDING',     'proj_001', NOW(), NOW()),
+  ('task_004', 'Set up app store accounts',       'COMPLETED',   'proj_002', NOW(), NOW()),
+  ('task_005', 'Build onboarding flow',           'IN_PROGRESS', 'proj_002', NOW(), NOW()),
+  ('task_006', 'Beta test with pilot users',      'PENDING',     'proj_002', NOW(), NOW()),
+  ('task_007', 'Define warehouse schema',         'IN_PROGRESS', 'proj_003', NOW(), NOW()),
+  ('task_008', 'Write ETL pipelines',             'PENDING',     'proj_003', NOW(), NOW()),
+  ('task_009', 'Run penetration test',            'PENDING',     'proj_004', NOW(), NOW()),
+  ('task_010', 'Patch critical findings',         'PENDING',     'proj_004', NOW(), NOW())
+ON CONFLICT ("id") DO NOTHING;

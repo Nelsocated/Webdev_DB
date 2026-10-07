@@ -203,7 +203,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "C:\\Users\\lagon\\Documents\\GitHub\\Webdev_DB\\t3\\gahh\\generated\\prisma",
+      "value": "C:\\Users\\lagon\\Documents\\GitHub\\Webdev_DB\\t3\\generated\\prisma",
       "fromEnvVar": null
     },
     "config": {
@@ -217,7 +217,7 @@ const config = {
       }
     ],
     "previewFeatures": [],
-    "sourceFilePath": "C:\\Users\\lagon\\Documents\\GitHub\\Webdev_DB\\t3\\gahh\\prisma\\schema.prisma",
+    "sourceFilePath": "C:\\Users\\lagon\\Documents\\GitHub\\Webdev_DB\\t3\\prisma\\schema.prisma",
     "isCustomOutput": true
   },
   "relativeEnvPaths": {
